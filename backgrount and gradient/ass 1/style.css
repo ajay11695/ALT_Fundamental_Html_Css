@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ****custum**** */
+*{
+    box-sizing: border-box;
+}
+
+/* ****body** */
+.container{
+    height: 140vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.682)),url('./top.jpg') ;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.boxes{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 70px 0;
+}
+.box{
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.box1{
+    background: linear-gradient(#ff0248 99%,black);
+   
+}
+
+.box2{
+    background: linear-gradient( to left,#ff0248,#392824);
+}
+
+.box3{
+    background: radial-gradient(#ff0248,#392824);
+}
+
+.box4{
+    width: 1280px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-image: linear-gradient(-45deg, rgba(236, 24, 24, 0.7),rgba(223, 223, 195,0.1)) ,url("bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 30px;
+    background-size: cover;
+
+}
