@@ -1,0 +1,329 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ******custom style */
+*::after,*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+.direction{
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.red{
+    color: red;
+}
+.white{
+    color: white;
+}
+.green{
+    color: #69c6ba;
+}
+.bold{
+    font-weight: 600;
+}
+.padding{
+    padding: 10px 20px;
+    display: inline-block;
+}
+.margin{
+   margin: 16px 0;
+}
+.text{
+    font-size: 20px;
+}
+
+.btn{
+    background-color: #69c6ba;
+    margin-top: 10px;
+}
+/* ******header**** */
+header{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.header-span{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.nav a{
+    margin-left: 30px;
+}
+/* ******main*** */
+main{
+    background-color: #e6e6e6;
+}
+/* ******hero-section*** */
+.hero-section{
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./image/banner.jpg');
+    padding: 80px 0;
+}
+.hero-heading{
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.small-box{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+.big-box{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px 0;
+}
+.hero-para{
+    margin: 20px 0;
+}
+.hero-a{
+    background-color: #69c6ba;
+    width: 30px ;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.hero-form{
+    width: 800px;
+    height: 20vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: 90px;
+}
+fieldset{
+    width: 48%;
+} 
+.hero-form label{
+    font-size: 16px;
+}
+.hero-form input{
+    display: block;
+    width: 80%;
+    margin-top: 15px;
+    border-color: rgb(235, 232, 232);
+}
+.hero-form-btn{
+    background-color: #69c6ba;
+     border: none;
+     padding: 5px 0;
+}
+/* *******journey**** */
+.journey{
+    background-color: #e6e4e4;
+    padding: 50px 0;
+}
+.journey-article{
+    width: 800px;
+    text-align: center;
+}
+
+
+/* ******places ****** */
+.places{
+    background-color: white;
+}
+.places a{
+    background-color: white;
+}
+
+.places-wrap{
+    flex: 0 1 50%;
+}
+.places figure{
+    font-size: 0;
+}
+
+.places article{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.place1{
+    position: relative;
+    z-index: 1;
+    right: 50px;
+    background-color: #69c6ba;
+}
+.place2{
+    position: relative;
+    z-index: 1;
+   left: 50px;  
+   background-color: #c66995;  
+}
+
+
+/* *******country-map */
+.country-map figure{
+    flex: 0 1 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.map{
+    background-color: #69c6ba;
+}
+.map1{
+   background-color: #c66995;
+}
+
+/* *******travel***** */
+.travel{
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+.travel-container{
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.travel-article{
+    margin-bottom: 20px;
+    border: 1px solid rgb(224, 218, 218);
+
+}
+.travel-img{
+    width: 30%;
+    font-size: 0;
+}
+.travel-div{
+    width: 51%;
+    background-color: #ffffff;
+    padding: 20px 0px 0 20px;
+    box-sizing: border-box;
+}
+.travel-img2{
+    width: 4%;
+    background-color:#69c6ba ;
+}
+.travel-div2{
+    width: 15%;
+    background-color:#69c6ba ;
+    height: 182px;
+    text-align: center;
+}
+.travel-div2 p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.travel-btn{
+    text-align: center;
+}
+
+/* ******map-form*** */
+.map-delhi{
+    position: relative;
+}
+.form2{
+    width: 370px;
+    background-color: white;
+    box-sizing: border-box;
+    padding:20px ;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+}
+
+.form2 input{
+    width: 46%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color:#e6e6e6 ;
+    border: none;
+}
+.email{
+    margin-left: 11px;
+}
+.form2 .form-input{
+    width: 98%;
+    background-color:#e6e6e6 ;
+    border: none;
+}
+.form2 a{
+    display: block;
+    text-align: center;
+}
+/* *******footer   **** */
+footer{
+    background-color: #69c6ba;
+    text-align: center;
+    padding: 20px 0;
+}

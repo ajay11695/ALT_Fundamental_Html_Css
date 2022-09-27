@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--    header   -->
+    <header class="flex align-item space-between">
+        <figure class="flex align-item">
+            <img src="./image/logo.png" alt="logo">
+            <span class="header-span bold">JOURNEY</span>
+        </figure>
+        <nav class="nav">
+            <a class="red" href="#">Home</a>
+            <a href="#">Tap Destinations</a>
+            <a href="#">Recommended Places</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <!--    hero-section -->
+        <section class="hero-section container">
+            <article class="flex direction align-item">
+                <h1 class="hero-heading bold white">LETS BEGIN</h1>
+                <div class="small-box"></div>
+                <div class="big-box"></div>
+                <div class="small-box"></div>
+                <p class="white hero-para">We assist you to choose the best</p>
+                <a class="hero-a flex align-item flex-center white" href="#"><i class="fa-solid fa-angle-down"></i></a>
+            </article>
+            <form action="" class="hero-form flex space-between">
+                <fieldset class="flex direction space-between">
+                    <div>
+                        <label for="destination">Choose Your Destination</label>
+                        <input type="text" name="" id="" placeholder="Type your destination">
+                    </div>
+                    <div class="flex space-between">
+                        <div>
+                            <label for="check">Check In Date</label>
+                            <input type="text" name="" id="" placeholder="Check In">
+                        </div>
+                        <div>
+                            <label for="check">Check Out Date</label>
+                            <input type="text" name="" id="" placeholder="Check Out">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="flex direction space-between">
+                    <div class="flex space-between">
+                        <div>
+                            <label for="room">How many rooms?</label>
+                            <input type="number" placeholder="1 ">
+                        </div>
+                        <div>
+                            <label for="adult">Adult</label>
+                            <input type="number" placeholder="1 ">
+                        </div>
+                        <div>
+                            <label for="children">Children</label>
+                            <input type="number" placeholder="0">
+                        </div>
+                    </div>
+                    <button class="hero-form-btn white">CHECK AVAILABILITY</button>
+                </fieldset>
+            </form>
+        </section>
+        <!--   journey -->
+        <section class="journey container flex flex-center">
+            <article class="journey-article">
+                <h1>YOUR <b class="bold">JOURNEY</b> IS OUR PRIORITY</h1>
+                <p class="margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ex ducimus, nihil ipsum
+                    repellat veritatis doloremque, sit, ratione maiores voluptatem quibusdam autem deleniti. Placeat,
+                    voluptatum.</p>
+                <a class="btn padding white" href="#">CONTINUE EXPLORE</a>
+            </article>
+        </section>
+        <!-- places   -->
+        <section class="container places">
+            <div class="flex align-item ">
+                <figure class="places-wrap">
+                    <img src="./image/tm-img-01.jpg" alt="img">
+                </figure>
+                <article class="places-wrap place1">
+                    <h1 class="text">Europe's most visited places</h1>
+                    <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsa nemo
+                        quidem, est, maiores eligendi provident repellendus recusandae, vel illo itaque ex! Error,
+                        consequatur facilis!</p>
+                    <a class="padding green" href="#">CONTINUE READING</a>
+                </article>
+            </div>
+            <div class="flex align-item">
+                <article class="places-wrap place2">
+                    <h1 class="text">Asia's most popular places</h1>
+                    <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsa nemo
+                        quidem, est, maiores eligendi provident repellendus recusandae, vel illo itaque ex! Error,
+                        consequatur facilis!</p>
+                    <a class="padding red" href="#">CONTINUE READING</a>
+                </article>
+                <figure class="places-wrap">
+                    <img src="./image/tm-img-02.jpg" alt="img">
+                </figure>
+            </div>
+            <div class="flex align-item ">
+                <figure class="places-wrap">
+                    <img src="./image/tm-img-03.jpg" alt="img">
+                </figure>
+                <article class="places-wrap place1">
+                    <h1 class="text">America's most famous places</h1>
+                    <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsa nemo
+                        quidem, est, maiores eligendi provident repellendus recusandae, vel illo itaque ex! Error,
+                        consequatur facilis!</p>
+                    <a class="padding green" href="#">CONTINUE READING</a>
+                </article>
+            </div>
+        </section>
+        <!-- country-map -->
+        <section class="container flex country-map">
+            <figure class="map">
+                <img src="./image/north-america.png" alt="">
+                <small>north-america</small>
+            </figure>
+            <figure class="map">
+                <img src="./image/south-america.png" alt="">
+                <small>south-america</small>
+            </figure>
+            <figure class="map">
+                <img src="./image/europe.png" alt="">
+                <small>europe</small>
+            </figure>
+            <figure class="map1"
+            ><img src="./image/asia.png" alt="">
+            <small>asia</small>
+        </figure>
+            <figure class="map">
+                <img src="./image/africa.png" alt="">
+                <small>africa</small>
+            </figure>
+            <figure class="map">
+                <img src="./image/australia.png" alt="">
+                <small>australia</small>
+            </figure>
+            <figure class="map">
+                <img src="./image/antartica.png" alt="">
+                <small>antartica</small>
+            </figure>
+        </section>
+        <!-- travel -->
+        <section class="container travel">
+            <div class="travel-container ">
+                <article class="flex align-item space-between travel-article">
+                    <figure class="travel-img">
+                        <img src="./image/tm-img-06.jpg" alt="image">
+                    </figure>
+                    <div class="travel-div">
+                        <h1 class="text bold">ASIA RESORT HOTEL</h1>
+                        <P class="red paragraph margin">Singapore</P>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam praesentium repellat nostrum repudiandae fugit dolores quasi molestias eligendi. Nemo, quidem!</p>
+                    </div>
+                    <figure class="travel-img2">
+                        <img src="./image/button-curve.png" alt="">
+                    </figure>
+                    <div class="travel-div2 flex flex-center direction white">
+                        <h2 class="text">$440</h2>
+                        <p>CONTINUE READING</p>
+                    </div>
+                </article>
+                <article class="flex align-item space-between travel-article">
+                    <figure class="travel-img">
+                        <img src="./image/tm-img-07.jpg" alt="image">
+                    </figure>
+                    <div class="travel-div">
+                        <h1 class="text bold">NULLAM EGET A NISL</h1>
+                        <P class="red paragraph margin">Yangon Myanmar</P>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam praesentium repellat nostrum repudiandae fugit dolores quasi molestias eligendi. Nemo, quidem!</p>
+                    </div>
+                    <figure class="travel-img2">
+                        <img src="./image/button-curve.png" alt="">
+                    </figure>
+                    <div class="travel-div2 flex flex-center direction white">
+                        <h2 class="text">$450</h2>
+                        <p>CONTINUE READING</p>
+                    </div>
+                </article>
+                <article class="flex align-item space-between travel-article">
+                    <figure class="travel-img">
+                        <img src="./image/tm-img-05.jpg" alt="image">
+                    </figure>
+                    <div class="travel-div">
+                        <h1 class="text bold">PROIN INTERDUM ULLAMCORPER</h1>
+                        <P class="red paragraph margin">Bangkok Thailand</P>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam praesentium repellat nostrum repudiandae fugit dolores quasi molestias eligendi. Nemo, quidem!</p>
+                    </div>
+                    <figure class="travel-img2">
+                        <img src="./image/button-curve.png" alt="">
+                    </figure>
+                    <div class="travel-div2 flex flex-center direction white">
+                        <h2 class="text">$460</h2>
+                        <p>CONTINUE READING</p>
+                    </div>
+                </article>
+                <article class="flex align-item space-between travel-article">
+                    <figure class="travel-img">
+                        <img src="./image/tm-img-04.jpg" alt="image">
+                    </figure>
+                    <div class="travel-div">
+                        <h1 class="text bold">LOREM IPSUM DOLOR SIT</h1>
+                        <P class="red paragraph margin">Vientiane Laos</P>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam praesentium repellat nostrum repudiandae fugit dolores quasi molestias eligendi. Nemo, quidem!</p>
+                    </div>
+                    <figure class="travel-img2">
+                        <img src="./image/button-curve.png" alt="">
+                    </figure>
+                    <div class="travel-div2 flex flex-center direction white">
+                        <h2 class="text">$470</h2>
+                        <p>CONTINUE READING</p>
+                    </div>
+                </article>
+                <div class="travel-btn">
+                <a class="padding white btn" href="#">SHOW MORE PLACES</a>
+                </div>
+            </div>
+        </section>
+        <!--   map    -->
+        <section class="container map-delhi">
+            <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.7390806598!2d76.81307179071017!3d28.646677257441528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1661522289540!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+            <form action="" class="form2">
+                <input type="text" placeholder="Name">
+                <input class="email" type="email" placeholder="Email">
+                <input class="form-input" type="text" placeholder="Subject">
+                <textarea class="form-input" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <a class="btn white padding" href="#">SEND MESSAGE NOW</a>
+            </form>
+        </section>
+    </main>
+    <footer class="container">
+        <p>Copyright&copy 2020 Your Country designed By Template mo.</p>
+    </footer>
+</body>
+
+</html>
