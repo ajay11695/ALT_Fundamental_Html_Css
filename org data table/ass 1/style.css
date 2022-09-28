@@ -1,0 +1,350 @@
+:root{
+    --primary:rgb(237,86,58);
+    --secondary:rgb(255,255,255);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* *****my reset**** */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ******general-classes*** */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.font-0{
+    font-size: 0;
+}
+
+.flex-30{
+    flex: 0 1 30%;
+}
+
+.flex-65{
+    flex: 0 1 65%;
+}
+/* ******button**** */
+.btn{
+    background-color: rgb(237,86,58);
+    color: white;
+    padding: 10px 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+.btn:hover{
+    box-shadow: 0px 5px 0px rgba(0,0,0,0.1);
+    opacity: 0.8;
+}
+/* ******text***** */
+.upper{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.text-20{
+    font-size: 20px;
+}
+
+span{
+    color:var(--primary) ;
+}
+
+.red{
+    color: rgb(237,86,58);
+}
+
+.white{
+    color:white ;
+}
+.blue{
+    color: rgb(67, 67, 228);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.margin{
+    margin: 20px 0;
+}
+
+/* ***header*** */
+header{
+    background-color: rgba(133, 193, 231, 0.1);
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.nav-menu{
+    text-transform: uppercase;
+    margin:0 20px;
+    color: white;
+}
+
+.nav-menu:hover{
+    color: var(--primary);
+}
+.home-btn{
+    color: var(--primary);
+}
+
+/* ****main*** */
+/* ******hero-section*** */
+.hero-section{
+    margin-top: -100px;
+    position: relative;
+    text-align: center;
+}
+.hero-video{
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.hero-section h1{
+    font-size: 44px;
+    margin: 30px 0;
+}
+
+/* *******program**** */
+.program{
+    padding: 60px 0;
+}
+.program-div{
+    width: 600px ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-30 img{
+    width: 100%;
+}
+.program-article{
+    flex: 0 1 48%;
+    margin-top: 50px;
+}
+
+/* ******cta***** */
+.cta{
+   position: relative;
+}
+.cta img{
+    width: 100%;
+}
+
+.cta h1{
+    font-size: 30px;
+}
+.cta div{
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0);
+}
+
+/* ********classes****** */
+.classes{
+    padding: 60px 0;
+}
+.classes article{
+    margin-top: 60px;
+}
+
+.classes-div{
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 2px rgb(158, 155, 155);
+}
+.classes-div img{
+    width: 100%;
+    height: 80px;
+}
+.classes-div h1{
+    font-size: 16px;
+}
+
+.classes-img{
+    width: 100%;
+}
+
+.classes a{
+    text-align: center;
+}
+
+/******schedule******/
+.schedule{
+    height: 130vh;
+    background-image: url('./images/schedule-bg.jpg');
+    padding: 100px 0;
+}
+.schedule-table{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+table{
+    margin-top: 30px;
+}
+
+td{
+    border: 2px solid white;
+    width: 220px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+   color: white;
+}
+
+/* *******trainers**** */
+.trainers{
+    padding: 80px 0;
+}
+.trainer{
+    flex: 0 1 32%;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+    margin-top: 40px;
+}
+.trainer img{
+    width: 100%;
+}
+.trainer i{
+    margin-right: 20px;
+}
+/* *****map **** */
+ .map-section{
+    position: relative;
+ }
+.map{
+    flex: 0 1 50%;
+}
+.map img{
+    width: 100%;
+}
+.form2{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+   border: 2px solid;
+   padding: 18px;
+   box-sizing: border-box;
+   position: absolute;
+   top: 70px;
+   right: 80px;
+}
+.form2 input{
+    width: 48%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.form2 .form-input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.email{
+    margin-left: 17px;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
