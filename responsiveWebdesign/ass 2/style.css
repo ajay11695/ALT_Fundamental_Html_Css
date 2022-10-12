@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**** my reset****** */
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    font-size: 1.1rem;
+}
+
+.width{
+    width: 100%;
+}
+/* ****flex** */
+.flex{
+    display: flex;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+.text-align{
+    text-align: center;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.font-0{
+    font-size: 0;
+}
+
+.flex-45{
+    flex: 0 1 45%;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+/* ******color** */
+.white{
+    color: #ffffff;
+}
+.red{
+    color: crimson;
+}
+/* ****button*** */
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 4px;
+}
+/*   ***text     */
+.text-2{
+    font-size: 2.5rem;
+}
+
+.text{
+    font-size: 1.5rem;
+}
+
+.margin{
+    margin: 2rem 0;
+}
+
+/* *****header***** */
+header{
+   padding: 1.5rem;
+}
+
+label ,input{
+    display: none;
+}
+
+.nav-menu li{
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+}
+
+header h1{
+    font-size: 2rem;
+}
+/* ***hero** */
+.hero{
+    background:linear-gradient(rgba(77, 77, 218, 0.8),rgb(77, 77, 218,0.8)), url('./media/image/banner.png')  no-repeat;
+    background-size: cover;
+    padding: 8rem 0;
+    margin-top: -6rem;
+}
+
+.flex-40{
+    flex: 0 1 40%;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ***about  */
+.about{
+   padding: 3rem 0;
+}
+
+.about h1{
+    text-transform: uppercase;
+} 
+
+.flex-46{
+    flex: 0 1 45%;
+}
+/* ****join*** */
+.join{
+    background-color: rgb(223,236,255);
+    padding: 3rem 0;
+}
+
+.flex-30{
+    flex: 0 1 30%;
+    margin-top: 2rem;
+    border: 2px dashed crimson;
+    padding: 1rem;
+    position: relative;
+}
+
+.box{
+    font-size: 1.5rem;
+    width:1.5rem;
+    height: 1.5rem;
+    background-color:rgb(223,236,255) ;
+    text-align: center;
+}
+.box1{
+    position: absolute;
+    top: -1.2rem;
+    left: 1rem;
+}
+.box2{
+    position: absolute;
+    top: -1.2rem;
+    left: 1rem;
+}
+.box3{
+    position: absolute;
+    top: -1.2rem;
+    left: 1rem;
+}
+
+/* ****schedule   */
+.schedule{
+    padding: 4rem 0;
+} 
+
+.schedule-div{
+    margin-top: 3rem;
+}
+
+.schedule img{
+    border-radius: 5px ;
+}
+
+.circle{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: crimson;
+}
+.circle1{
+    width: 9rem;
+    height: 9rem;
+    border: 2px dashed red;
+    border-radius: 50%;
+}
+
+/* *****topic**** */
+.topic{
+    background-color:#dfecff ;
+    padding: 4rem 0;
+}
+
+.flex-20{
+    flex: 0 1 22%;
+}
+
+.topic-idea{
+    background-color: crimson;
+    padding: 2rem;
+}
+
+/* *****banner*** */
+.banner{
+    padding: 4rem 0;
+    position: relative;
+   
+}
+.banner figure{
+    width: 100%;
+}
+
+.icon-div i{
+    font-size: 2rem;
+    color: red;
+    border-radius: 50%;
+    border: 2px solid red;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform:translate(-50%,-50%) ;
+}
+
+/* ******news**** */
+.news{
+    padding: 4rem 0;
+}
+
+.flex-31{
+    flex: 0 1 31%;
+    margin-top: 3rem;
+}
+
+/* ***foooter****** */
+
+.footer-logo{
+    background-color:#23347b ;
+    padding: 4rem 0;
+}
+.footer-logo h1{
+    margin-bottom: 2rem;
+}
+
+.footer-logo li{
+    color: white;
+    margin-right: 1.5rem;
+}
+
+.footer-logo i{
+    color: white;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer-heading{
+    background-color: #102169;
+    padding: 1rem 0;
+}
+
+/*      media  */
+@media all and (max-width:768px){
+
+    .flex{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    footer{
+        text-align: center;
+    }
+    .flex-20,.flex-30,.flex-31{
+        flex: 0 1 100%;
+        margin-top: 3rem;
+    }
+
+    .flex-45{
+        margin-top: 3rem;
+        flex: 0 1 100%;
+    }
+
+    .flex-40{
+        margin-top: 4rem;
+        flex: 0 1 100%;
+    }
+
+    .circle,.circle1{
+        margin-left: 40%;
+    }
+
+    .flex-46 {
+        flex: 0 1 100%;
+    }
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    .hero{
+        margin-top: -19rem;
+        padding-top: 14rem;
+    }
+
+    .nav-menu{
+        text-align: center;
+    }
+
+    .btn{
+        margin-top: 2rem;
+    }
+
+
+    /* *****navigation** */
+     .column{
+        flex-direction: column;
+        flex: 0 1 100%;
+    }
+    .nav-menu{
+        display: none;
+        margin-right: 0;
+    }
+    #toggle:checked ~ .nav-menu{
+        display: inline-block;
+        align-items: center;
+    }
+   header input{
+    display: none;
+   }
+   label{
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+   } 
+}
+
